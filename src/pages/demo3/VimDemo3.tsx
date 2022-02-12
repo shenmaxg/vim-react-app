@@ -33,8 +33,8 @@ const VimDemo3: React.FC = () => {
 
     return (
         <>
-            <input ref={input} />
-            <div>
+            <div style={{ display: 'flex' }}>
+                <input ref={input} />
                 <Upload customRequest={
                     ({ file, onSuccess }:any) => (
                         vim?.dropFiles([file]).then(() => (
